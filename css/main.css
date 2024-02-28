@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --first-color: #ff6550;
+  --secend-color: #fff;
+}
+
+.stoper__box {
+  position: relative;
+  background-color: rgba(30, 29, 29, 0.568627451);
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 9px 11px 20px -9px rgb(0, 0, 0);
+}
+.stoper__box-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+}
+.stoper__box-icons-item .info,
+.stoper__box-icons-item .brush {
+  color: var(--secend-color);
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+.stoper__box-icons-item .info:hover, .stoper__box-icons-item .brush:hover {
+  color: var(--first-color);
+}
+.stoper__box .stop-watch {
+  color: var(--first-color);
+  text-align: center;
+  padding-bottom: 0.8em;
+  visibility: hidden;
+}
+.stoper__box-title, .stoper__box-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding: 0 1em 0.5em 1em;
+  text-align: center;
+}
+.stoper__box-text {
+  color: var(--first-color);
+  padding-bottom: 1em;
+}
+.stoper__box-action-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.stoper__box-action-btn-item {
+  padding: 0.3em 1.5em;
+  background-color: rgba(65, 61, 61, 0.7);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.stoper__box-action-btn-item:hover, .stoper__box-action-btn-item:focus {
+  background-color: var(--first-color);
+  outline: none;
+}
+.stoper__box-info-btn {
+  margin: 0 auto;
+  width: 409px;
+  padding-bottom: 2em;
+}
+.stoper__box-info-btn-item {
+  width: 100%;
+  padding: 0.5em;
+  background-color: rgba(65, 61, 61, 0.7);
+  color: var(--secend-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.stoper__box-info-btn-item:hover, .stoper__box-info-btn-item:focus {
+  background-color: var(--first-color);
+  outline: none;
+}
+.stoper__box .time-list {
+  color: var(--first-color);
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 1em;
+  display: none;
+}
+.stoper__box .time-list li {
+  list-style-type: none;
+}
+
+.modal-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 360px;
+  padding: 30px 60px;
+  border-radius: 15px;
+  background-color: rgb(70, 66, 66);
+}
+.modal h3 {
+  font-size: 30px;
+  padding-bottom: 0.5em;
+  color: var(--secend-color);
+}
+.modal i {
+  padding: 0.5em;
+  color: var(--first-color);
+}
+.modal p {
+  color: var(--secend-color);
+  text-align: start;
+  padding: 0.5em;
+}
+
+.close {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background: #302828;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+  color: var(--secend-color);
+  margin-top: 1em;
+}
+.close:hover, .close:focus {
+  background-color: var(--first-color);
+  outline: none;
+}
+
+.modal-animation {
+  animation: show-modal 0.5s;
+}
+
+@keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.color-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  background-color: transparent;
+  height: 181px;
+  position: absolute;
+  right: 30%;
+  top: 38%;
+  left: 59%;
+  visibility: hidden;
+}
+.color-box-item {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transition: background-color;
+}
+.color-box .one {
+  background-color: red;
+}
+.color-box .one:hover {
+  background-color: rgb(177, 11, 11);
+}
+.color-box .two {
+  background-color: olivedrab;
+}
+.color-box .two:hover {
+  background-color: rgb(92, 122, 32);
+}
+.color-box .three {
+  background-color: royalblue;
+}
+.color-box .three:hover {
+  background-color: rgb(49, 89, 207);
+}
+.color-box .four {
+  background-color: yellow;
+}
+.color-box .four:hover {
+  background-color: rgb(199, 199, 35);
+}
+
+.show {
+  visibility: visible;
+}/*# sourceMappingURL=main.css.map */

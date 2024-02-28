@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projekt Stoper</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="stoper__box">
+			<div class="stoper__box-icons">
+				<div class="stoper__box-icons-item">
+					<p class="info"><i class="fas fa-question"></i></p>
+				</div>
+				<div class="stoper__box-icons-item">
+					<p class="brush">
+						<i class="fa-solid fa-paintbrush"></i>
+					</p>
+				</div>
+			</div>
+			<p class="stoper__box-title">Stoper</p>
+			<p class="stoper__box-text">0:00</p>
+			<p class="stop-watch">0:00</p>
+			<div class="stoper__box-action-btn">
+				<button class="stoper__box-action-btn-item play">
+					<img src="img/play.svg" alt="play icon" />
+				</button>
+				<button class="stoper__box-action-btn-item pause">
+					<img src="img/pause.svg" alt="pause icon" />
+				</button>
+				<button class="stoper__box-action-btn-item save">
+					<img src="img/save.svg" alt="save icon" />
+				</button>
+				<button class="stoper__box-action-btn-item trash">
+					<img src="img/trash-2.svg" alt="remove icon" />
+				</button>
+			</div>
+			<div class="stoper__box-info-btn">
+				<button class="stoper__box-info-btn-item history">Archiwum</button>
+			</div>
+			<ul class="time-list">
+			</ul>
+		</div>
+		<div class="modal-shadow">
+			<div class="modal">
+				<h3>Instrukcja</h3>
+				<p><i class="fa-solid fa-play"></i>włacza stoper</p>
+				<p><i class="fa-solid fa-pause"></i>zatrzymuje stoper</p>
+				<p><i class="fa-solid fa-floppy-disk"></i>zapisuje wynik</p>
+				<p><i class="fa-regular fa-trash-can"></i>usuwa dane</p>
+				<p><strong>Archiwum</strong>: wyświetla zapisane pomiary</p>
+				<button class="close">Zamknij</button>
+			</div>
+		</div>
+
+		<div class="color-box ">
+			<div class="color-box-item one"></div>
+			<div class="color-box-item two"></div>
+			<div class="color-box-item three"></div>
+			<div class="color-box-item four"></div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/01dc38c3ef.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="JS/main.js"></script>
+	</body>
+</html>
